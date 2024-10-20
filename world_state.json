@@ -1,0 +1,24 @@
+{
+  "objects": [
+    {
+      "name": "苹果",
+      "description": "一个红色的苹果",
+      "state": "在地上"
+    },
+    {
+      "name": "书",
+      "description": "一本蓝色封面的书",
+      "state": "在书架上"
+    },
+    {
+      "name": "椅子",
+      "description": "一把木制椅子",
+      "state": "在房间角落"
+    }
+  ],
+  "robot": {
+    "name": "机器人",
+    "description": "一个能执行简单任务的机器人",
+    "state": "没有拿着任何东西"
+  }
+}
