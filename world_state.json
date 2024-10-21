@@ -1,24 +1,88 @@
 {
   "objects": [
     {
-      "name": "苹果",
-      "description": "一个红色的苹果",
-      "state": "在地上"
+      "name": "Table",
+      "description": "A wooden table, medium-sized, with a smooth surface. It is positioned centrally in the room.",
+      "state": "The table is stable and now holds one item: the book.",
+      "location": "On the table in the center of the room.",
+      "attributes": [
+        "stable",
+        "supports items"
+      ]
     },
     {
-      "name": "书",
-      "description": "一本蓝色封面的书",
-      "state": "在书架上"
+      "name": "Book",
+      "description": "A hardcover book with a blue cover, approximately 8 inches tall and 5 inches wide. The title is visible on the spine.",
+      "state": "The book is now being held by the robot, no longer resting on the table.",
+      "location": "In the robot's grasp, approximately 1 foot above the table's surface.",
+      "attributes": [
+        "movable",
+        "readable"
+      ]
     },
     {
-      "name": "椅子",
-      "description": "一把木制椅子",
-      "state": "在房间角落"
+      "name": "Apple",
+      "description": "A red apple, medium-sized, shiny with a stem on top.",
+      "state": "The apple is now being held by the robot, no longer resting on the table.",
+      "location": "In the robot's grasp, approximately 1 foot above the table's surface.",
+      "attributes": [
+        "movable",
+        "edible"
+      ]
+    },
+    {
+      "name": "Bookshelf",
+      "description": "A tall wooden bookshelf, dark brown in color, filled with various books. It has a specific book that stands out due to its distinct color.",
+      "state": "The bookshelf is stable and fully stocked with books.",
+      "location": "Northeast corner of the room.",
+      "attributes": [
+        "stable",
+        "contains items"
+      ]
+    },
+    {
+      "name": "Chair",
+      "description": "A wooden chair, medium height, with a simple design. The seat is cushioned with a light fabric.",
+      "state": "The chair is unoccupied and stable.",
+      "location": "Southwest corner of the room.",
+      "attributes": [
+        "movable",
+        "sit-on"
+      ]
+    },
+    {
+      "name": "Door",
+      "description": "A standard wooden door with a brass doorknob, leading out of the room.",
+      "state": "The door is now closed, preventing access to the space beyond.",
+      "location": "The door is in a closed position, firmly in place at the entrance of the room.",
+      "attributes": [
+        "openable",
+        "closeable"
+      ]
     }
   ],
   "robot": {
-    "name": "机器人",
-    "description": "一个能执行简单任务的机器人",
-    "state": "没有拿着任何东西"
-  }
+    "name": "Robot",
+    "description": "A humanoid robot with a silver metallic body, approximately 5 feet tall. It has articulated limbs and a digital face that displays expressions.",
+    "state": "Standing in front of the open door, still holding the book and apple.",
+    "location": "In front of the open door, approximately 1 foot away from the door frame.",
+    "capabilities": [
+      "moving",
+      "grasping objects",
+      "opening doors",
+      "closing doors"
+    ]
+  },
+  "environment": {
+    "description": "With the door now closed, the gentle breeze that was flowing into the room has ceased, creating a still atmosphere inside. The room is now fully enclosed, with the open space beyond the door no longer visible.",
+    "features": [
+      "wooden walls",
+      "carpeted floor",
+      "one door to the north",
+      "one bookshelf in the northeast corner",
+      "a table in the center",
+      "a chair in the southwest corner"
+    ]
+  },
+  "description": "The room has wooden walls and a carpeted floor, measuring approximately 15 feet by 12 feet. A door situated on the north side is closed, preventing access to the space beyond. The interior is still, with the absence of the previously flowing breeze. In the northeast corner stands a tall wooden bookshelf filled with various books. The center of the room is occupied by a medium-sized wooden table. A medium-height wooden chair is located in the southwest corner.\n\nThe table is positioned centrally and is stable. It currently does not support any items, as the apple that was resting on its smooth surface has been removed. The bookshelf is stable and fully stocked with books, with one particular book standing out due to its distinct color among the collection. The chair is unoccupied and stable, featuring a cushioned seat.\n\nIn front of the table stands a humanoid robot with a silver metallic body. The robot is holding both a hardcover book and a red apple. Both items are positioned about 1 foot above the table's surface. The robot is approximately 5 feet tall and is stable, located directly in front of the closed door, about 1 foot away from the door frame. The robot has capabilities that allow it to move and grasp objects, as well as open and close doors.\n\nThe robot’s actions create potential interactions within the room. It may choose to place the book back onto the table, where the apple is already being held. Alternatively, the robot could opt to pick up the apple, which would allow it to explore further options. The closed door represents a boundary, but the robot’s capabilities suggest that it may soon engage with the door, leading to possible changes in the scene."
 }
